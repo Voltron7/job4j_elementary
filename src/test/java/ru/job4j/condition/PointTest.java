@@ -6,7 +6,7 @@ import org.junit.Test;
 public class PointTest {
 
     @Test
-    public void distance() {
+    public void when00to20then2() {
         double expected = 2;
         int x1 = 0;
         int y1 = 0;
@@ -17,7 +17,7 @@ public class PointTest {
     }
 
     @Test
-    public void distance1() {
+    public void when00to30then3() {
         double expected = 3;
         int x1 = 0;
         int y1 = 0;
@@ -28,7 +28,7 @@ public class PointTest {
     }
 
     @Test
-    public void distance2() {
+    public void when00to40then4() {
         double expected = 4;
         int x1 = 0;
         int y1 = 0;
