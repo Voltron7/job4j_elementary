@@ -4,7 +4,7 @@ public class EndsWith {
 
     public static boolean endsWith(char[] word, char[] post) {
         for (char i = 0; i < post.length; i++) {
-            if (post[post.length - 1] != word[word.length - 1]) {
+            if (post[post.length - i - 1] != word[word.length - i - 1]) {
                 return false;
             }
         }
