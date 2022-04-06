@@ -13,14 +13,22 @@ public class MatrixCheck {
         return result;
     }
 
-        public static boolean monoVertical(char[][] board, int column) {
-            boolean result = true;
-            for (int index = 0; index <= board.length - 1; index++) {
-                if (board[index][column] != 'X') {
-                    result = false;
-                    break;
-                }
+    public static boolean monoVertical(char[][] board, int column) {
+        boolean result = true;
+        for (int index = 0; index <= board.length - 1; index++) {
+            if (board[index][column] != 'X') {
+                result = false;
+                break;
             }
-            return result;
         }
+        return result;
     }
+
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int index = 0; index <= board.length - 1; index++) {
+            rsl[index] = board[index][index];
+        }
+        return rsl;
+    }
+}
