@@ -4,19 +4,18 @@ public class Defragment {
 
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
-            if (array[index] == null) {
-                int point = index;
-                    while (point < array.length - 1) {
-                        point++;
+                if (array[index] == null) {
+                    int point = index;
+                    for (point = index + 1; point < array.length; point++) {
                         if (array[point] != null) {
                         array[index] = array[point];
                         array[point] = null;
                         break;
+                        }
                     }
                 }
             }
-        }
-        return array;
+            return array;
     }
 
     public static void main(String[] args) {
